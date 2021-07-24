@@ -6,5 +6,11 @@
   @scenario1
   Scenario: Search for a automation course
     Given than brandom wants to learn automation at the academy Choucair
-    When he search for the course Recursos Automatizacion Bancolombia on the choucair academy platform
-    Then he finds the course called resources Recursos Automatizacion Bancolombia
+    |strUser|strPassword|
+    |youUser>|youPassword|
+    When he search for the course  on the choucair academy platform
+    |strCourse             |
+    |metodology Bancolombia|
+    Then he finds the course called resources
+    |strCourse|
+    |metodology Bancolombia|
